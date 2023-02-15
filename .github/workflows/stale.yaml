@@ -25,10 +25,14 @@ jobs:
     - uses: actions/stale@v7
       with:
         repo-token: ${{ secrets.GITHUB_TOKEN }}
+        
+        
         stale-pr-message: 'This PR is stale because it has been open 30 days with no activity. Remove stale label or comment or this will be closed in 5 days'
         days-before-stale: 0
         days-before-close: 0
         
+        # reason for closed the issue default value is not_planned 
+        close-issue-reason: completed
         # comment on issues if not active for more then 14 days.
         stale-issue-message: 'This issue has been automatically marked as stale because it has no recent activity. It will be closed if no further activity occurs. Thank you.'
         
