@@ -40,7 +40,7 @@ jobs:
           days-before-issue-close: 0
           stale-issue-label: "stale"
           # reason for closed the issue default value is not_planned
-          close-issue-reason: completed
+          close-issue-reason: not_planned
           any-of-labels: "stat:contributions welcome,stat:good first issue"
           stale-issue-message: > 
             This issue is stale because it has been open for 180 days with no activity.
